@@ -262,7 +262,7 @@ html {
 /* teachers */
 
 .teachers {
-  margin-bottom: 74px;
+  margin-bottom: 75px;
   background-color: var(--color-sapphire-blue);
 }
 
@@ -317,7 +317,7 @@ html {
 }
 
 .courses__title {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   margin-bottom: 25px;
   font-style: normal;
   font-weight: 700;
@@ -350,7 +350,7 @@ html {
 }
 
 .courses__list-title {
-  padding-left: 32px;
+  padding-left: 31px;
   margin-bottom: 7px;
   font-style: normal;
   font-weight: 700;
@@ -460,6 +460,10 @@ html {
 
   .hero__img {
     padding-top: 116px;
+  }
+
+  .hero__img-inner {
+    width: 311px;
   }
 
   .about {
@@ -707,6 +711,44 @@ html {
     background-color: var(--color-white-bg);
   }
 
+  .header__burger-line:last-child {
+    margin-bottom: 0;
+  }
+
+  #burger:checked ~ .header__burger > .header__burger-line--1 {
+   opacity: 0;
+  }
+
+  #burger:checked ~ .header__burger > .header__burger-line--2 {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 21px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+
+  #burger:checked ~ .header__burger > .header__burger-line--3 {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 21px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+
   .header__list {
     display: none;
   }
@@ -714,14 +756,24 @@ html {
   .header__list--adaptive {
     display: block;
     width: 322px;
-    /* display: none; */
     position: absolute;
     top: 0px;
-    /* left: -50px; */
-    /* padding: 76px 158px 105px 15px; */
     background-color: var(--color-sapphire-blue);
     z-index: 100;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  .header__list--adaptive.is-active {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   .header__item {
