@@ -459,11 +459,7 @@ html {
   }
 
   .hero__img {
-    padding-top: 116px;
-  }
-
-  .hero__img-inner {
-    width: 311px;
+    padding-top: 119px;
   }
 
   .about {
@@ -562,6 +558,10 @@ html {
     margin-bottom: 31px;
   }
 
+  .courses__list-btn {
+    max-width: 196px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -587,31 +587,44 @@ html {
 
   .header__logo {
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 
   .header__item:not(:last-child) {
-    margin-right: 54px;
+    margin-right: 56px;
   }
 
   .hero__text-block {
     padding-top: 77px;
   }
 
+  .hero__text-block-title {
+    margin-bottom: 17px;
+  }
+
   .hero__img {
     display: none;
   }
 
-  .about {
+  .hero__text-block-subtitle {
     margin-bottom: 60px;
+  }
+
+  .hero__btn {
+    margin-bottom: 137px;
+  }
+
+  .about {
+    margin-bottom: 54px;
   }
 
   .about__title::before {
     content: url(../img/about_img-576.png);
+    top: 0;
   }
 
   .about__title {
-    max-width: 330px;
+    max-width: 209px;
     padding-left: 180px;
   }
 
@@ -621,7 +634,7 @@ html {
 
   .about__paragraph {
     max-width: 330px;
-    margin-bottom: 125px;
+    margin-bottom: 115px;
   }
 
   .about__list-item {
@@ -629,19 +642,24 @@ html {
   }
 
   .teachers__title {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 
   .teachers__list-item {
     max-width: 240px;
   }
 
+  .teachers__list-item:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+
   .courses__title {
     padding-top: 80px;
   }
 
   .courses__title {
-    margin-bottom: 30px;
+    padding-top: 75px;
+    margin-bottom: 25px;
   }
 
   .courses__list-item {
@@ -649,11 +667,13 @@ html {
   }
 
   .courses__list-item-img {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .courses__list-title {
     max-width: 194px;
+    height: 40px;
+    margin-bottom: 14px;
     padding-left: 30px;
     line-height: 130%;
   }
@@ -663,7 +683,7 @@ html {
   }
 
   .courses__list-item-inner {
-    height: 393px;
+    height: 387px;
   }
 
   .courses__list-btn {
